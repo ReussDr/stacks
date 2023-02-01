@@ -27,7 +27,7 @@ jobs:
         ls -al
         ls -al arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
 
-    # TODO Install Compiler
-
     - name: Run Build
-      run: make -C ble-apps/build/tag/gcc
+      run: |
+        export PATH="arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin:$PATH"
+        make -C ble-apps/build/tag/gcc
