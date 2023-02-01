@@ -25,7 +25,7 @@ jobs:
     - name: 'Print Contents'
       run: |
         ls -al
-        ls -al arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
+        ls -al arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin
 
     - name: Run Build
       run: |
